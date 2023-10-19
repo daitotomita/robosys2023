@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2023 Daito Tomita <s22C1090CW@s.chibakoudai.jp>
 import sys
 
 ans = 0
