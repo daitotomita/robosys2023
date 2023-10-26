@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xv
 # SPDX-FileCopyrightText: 2023 Daito Tomita
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -13,5 +13,13 @@ res=0
 out=$(seq 5 | ./plus)
 [ "${out}" = 15 ] || ng ${LINENO}
 
-[ "$res" = 0 ] && echo OK
+### STRANGE INPUT ###
+out=$(echo あ | ./plus)
+[ "$?" = 1]	  || ng ${LINEMO}
+[ "${out}" = "" ] || ng ${LINEMO}
+
+out=$(echo | ./plus)
+[ "$?" = 1]	   || ng ${LINEMO}
+[ "$${out}" = "" ] || ng ${LINEMO}
+
 exit $res
