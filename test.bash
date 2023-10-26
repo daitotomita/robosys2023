@@ -22,4 +22,6 @@ out=$(echo | ./plus)
 [ "$?" = 1 ]	  || ng ${LINEMO}
 [ "${out}" = "" ] || ng ${LINEMO}
 
+[ "$res" = 0 ] && echo OK
+
 exit $res
