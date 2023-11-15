@@ -21,3 +21,8 @@ elif b == "2":
      f = d * 60
      print("大阪ー京都",math.floor(c),"時間",math.floor(f),"分")
 
+elif b == "3":
+     c = 211 / a
+     d, e = math.modf(c)
+     f = d * 60
+     print("京都ー岡山",math.floor(c),"時間",math.floor(f),"分")
