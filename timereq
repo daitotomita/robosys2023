@@ -26,3 +26,6 @@ elif b == "3":
      d, e = math.modf(c)
      f = d * 60
      print("京都ー岡山",math.floor(c),"時間",math.floor(f),"分")
+
+else:
+    print("error")
