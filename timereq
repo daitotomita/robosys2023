@@ -6,7 +6,7 @@ import sys
 import math
 
 a = int(input())
-print("東京ー大阪:1,大阪ー京都:2,京都ー岡山:3")
+print("東京ー大阪:1,大阪ー京都:2,京都ー富山:3")
 b = str(input())
 
 if b == "1":
@@ -22,10 +22,10 @@ elif b == "2":
      print("大阪ー京都",math.floor(c),"時間",math.floor(f),"分")
 
 elif b == "3":
-     c = 211 / a
+     c = 320 / a
      d, e = math.modf(c)
      f = d * 60
-     print("京都ー岡山",math.floor(c),"時間",math.floor(f),"分")
+     print("京都ー富山",math.floor(c),"時間",math.floor(f),"分")
 
 else:
     print("error")
