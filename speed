@@ -4,7 +4,24 @@
 
 a = int(input())
 b = str(input())
-c = str(input())
 
+if b == 'km/s':
+    x = a / 60
+    y = a / 3600
+    print(x,"km/m")
+    print(y,"km/h")
 
+elif b == 'km/m':
+    x = a * 60
+    y = a / 3600
+    print(x,"km/s")
+    print(y,"km/h")
 
+elif b == 'km/h':
+    x = a * 60
+    y = a * 3600
+    print(x,"km/m")
+    print(y,"km/s")
+
+else:
+    print("error")
