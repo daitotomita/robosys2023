@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: 2023 Daito Tomita <s22C1090CW@s.chibakoudai.jp>
 # SPDX-License-Identifier: BSD-3-Clause
 
+import sys
+
 a = int(input())
 b = str(input())
 

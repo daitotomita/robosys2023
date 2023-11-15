@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2023 Daito Tomita <s22C1090CW@s.chibakoudai.jp>
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+import math
+
+a = int(input())
+print("東京ー大阪:1,大阪ー京都:2,京都ー岡山:3")
+b = str(input())
+
+if b == "1":
+    c = 500 / a
+    d, e = math.modf(c)
+    f = d * 60
+    print("東京ー大阪",math.floor(c),"時間",math.floor(f),"分")
+
