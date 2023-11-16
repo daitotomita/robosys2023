@@ -6,6 +6,7 @@ import sys
 import math
 
 a = int(input())
+print("km/h")
 print("東京ー大阪:1,大阪ー京都:2,京都ー富山:3")
 b = str(input())
 

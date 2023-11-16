@@ -4,11 +4,21 @@
 
 import sys
 
-ans = 0
+ans1 = 0
+ans2 = 0
+ans3 = 1
+ans4 = 1.0
+
 for line in sys.stdin:
     try:
-        ans += int(line)
+        ans1 += int(line)
+        ans2 -= int(line)
+        ans3 *= int(line)
+        ans4 /= int(line)
     except:
-        ans += float(line)
+        ans1 += float(line)
+        ans2 -= float(line)
+        ans3 *= float(line)
+        ans4 /= float(line)
 
-print(ans)
+print(ans1,":",ans2,":",ans3,":",ans4)
