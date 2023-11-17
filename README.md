@@ -1,7 +1,7 @@
 # robosys2023 plusコマンド
 [![test](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml)
 
-標準入力から読み込んだ数字を足す。
+標準入力から読み込んだ数字に対し、足し算・引き算・掛け算・割り算をする。
 
 ## インストール方法
 *  自身のpythonの動く環境に導入する。
@@ -11,15 +11,15 @@
   * テスト済み: 3.7～3.10
 
 ## テスト環境
-* Ubuntu
+* Ubuntu 20.04
 
 ## 使い方
-*  任意の数字をスペース区切りでいくつか入力すると、その入力した数を足してくれます。
-*  以下のように入力することで1-10の全ての数を足してくれます。
+*  任意の数字を標準入力する。
+*  以下に実行例を示す。
 
 ```
-$ seq 10 | ./plus
-50
+seq 5 | ./plus
+15 : -15 : 120 : 0.0083333333 
 ```
 
 ## 著作権とライセンス
