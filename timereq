@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2023 Daito Tomita <s22C1090CW@s.chibakoudai.jp>
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+import math
+
+a = int(input())
+
+b1 = 500 / a
+b2 = 56 / a
+b3 = 320 / a
+
+c1, d1 = math.modf(b1)
+c2, d2 = math.modf(b2)
+c3, d3 = math.modf(b3)
+e1 = c1 * 60
+e2 = c2 * 60
+e3 = c3 * 60
+
+print(a,"km/h")
+print("東京ー大阪",math.floor(b1),"時間",math.floor(e1),"分")
+print("大阪ー京都",math.floor(b2),"時間",math.floor(e2),"分")
+print("京都ー富山",math.floor(b3),"時間",math.floor(e3),"分")
