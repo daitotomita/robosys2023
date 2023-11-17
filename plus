@@ -23,4 +23,4 @@ for line in sys.stdin:
         ans3 *= float(line)
         ans4 /= float(line)
 
-print(ans1,":",ans2,":",ans3,":",round(ans4,5))
+print(ans1,":",ans2,":",ans3,":",round(ans4,10))
