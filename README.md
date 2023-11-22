@@ -1,4 +1,4 @@
-# robosys2023 plusコマンド
+# robosys2023 plus&timereqコマンド
 [![test](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml)
 
 標準入力から読み込んだ数字に対し、足し算・引き算・掛け算・割り算をする。
@@ -30,6 +30,7 @@
   東京ー大阪 16 時間 40 分
   大阪ー京都 1 時間 52 分
   京都ー富山 10 時間 39 分
+
 *timereq
   ./timereq 30 50
   30 km/h
