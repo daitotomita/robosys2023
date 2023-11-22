@@ -53,6 +53,12 @@ out=$(./timereq 30 50 70)
 大阪ー京都 0 時間 48 分
 京都ー富山 4 時間 34 分" ] || ng ${LINENO}
 
+### STRANGE INPUT ###
+out=$(./timereq あ)
+
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
 [ "$res" = 0 ] && echo OK
 
 exit $res
