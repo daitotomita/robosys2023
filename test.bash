@@ -40,6 +40,10 @@ out=$(echo A 10 | ./plus)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
+out=$(echo あ 10 | ./plus)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
 out=$(echo あ | ./plus)
 
 [ "$?" = 1 ]      || ng ${LINENO}
