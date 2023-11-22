@@ -28,6 +28,9 @@ out=$(seq 1.9 | ./plus)
 out=$(seq 2.0 | ./plus)
 [ "${out}" = "3 : -3 : 2 : 0.5" ] || ng ${LINENO}
 
+out=$(seq 5 10 | ./plus)
+[ "${out}" = "45 : -45 : 151200 : 6.6138e-06" ] || ng ${LINENO}
+
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
 
