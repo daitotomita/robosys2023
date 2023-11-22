@@ -55,7 +55,10 @@ out=$(./timereq 30 50 70)
 
 ### STRANGE INPUT ###
 out=$(./timereq あ)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
 
+out=$(./timereq ! )
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
