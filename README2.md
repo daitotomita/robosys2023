@@ -2,7 +2,6 @@
 [![test](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml)
 
 標準入力から読み込んだ値を時速換算し、東京-大阪,大阪-京都,京都-富山までの移動時間を算出する。
-をする。
 
 ## インストール方法
 *  自身のpythonの動く環境に導入する。
