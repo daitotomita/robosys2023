@@ -1,9 +1,9 @@
 # robosys2023 plus&timereqコマンド
 [![test](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml)
 
-*plus:標準入力から読み込んだ数字に対し、足し算・引き算・掛け算・割り算をする。
+plus:標準入力から読み込んだ数字に対し、足し算・引き算・掛け算・割り算をする。
 
-*timereq:標準入力から読み込んだ値を時速換算し、東京-大阪,大阪-京都,京都-富山までの移動時間を算出する。
+timereq:標準入力から読み込んだ値を時速換算し、東京-大阪,大阪-京都,京都-富山までの移動時間を算出する。
 
 ## インストール方法
 *  自身のpythonの動く環境に導入する。
@@ -20,7 +20,7 @@
 *  以下に実行例を示す。
 
 ```
-*plus
+<plus>
   seq 5 | ./plus
   15 : -15 : 120 : 0.0083333333
 
@@ -33,7 +33,7 @@
   大阪ー京都 1 時間 52 分
   京都ー富山 10 時間 39 分
 
-*timereq
+<timereq>
   ./timereq 30 50
   30 km/h
   東京ー大阪 16 時間 40 分
