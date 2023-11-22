@@ -32,6 +32,14 @@ out=$(seq 5 10 | ./plus)
 [ "${out}" = "45 : -45 : 151200 : 6.6138e-06" ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
+out=$(echo a 10 | ./plus)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
+out=$(echo A 10 | ./plus)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
 out=$(echo あ | ./plus)
 
 [ "$?" = 1 ]      || ng ${LINENO}
