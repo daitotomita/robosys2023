@@ -54,6 +54,14 @@ out=$(./timereq 30 50 70)
 京都ー富山 4 時間 34 分" ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
+out=$(./timereq a 30 70)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
+out=$(./timereq A 30 70)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
 out=$(./timereq あ)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
