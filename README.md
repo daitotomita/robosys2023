@@ -12,11 +12,20 @@ $git clone @github.com:daitotomita/robosys2023.git
 ```
 
 ## 必要ソフトウェア
-* Python
-  * テスト済み: 3.7～3.10
+*asmd
+  * Python
+    * テスト済み: 3.7～3.10
+
+*timereq
+  * Python
+    * テスト済み: 3.7～3.10
 
 ## テスト環境
-* Ubuntu 20.04
+*asmd
+  * Ubuntu 20.04
+
+*timereq
+  * Ubuntu 20.04
 
 ## 使い方
 *  任意の数字を標準入力する。
@@ -24,20 +33,20 @@ $git clone @github.com:daitotomita/robosys2023.git
 
 ```
 <asmd>
-  seq 5 | ./asmd
+  $ seq 5 | ./asmd
   15 : -15 : 120 : 0.0083333333
 
-  seq 5 10 |./asmd
+  $ seq 5 10 |./asmd
   45 : -45 : 151200 : 6.6138e-06 
 
 <timereq>
-  ./timereq 30
+  $ ./timereq 30
   30 km/h
   東京ー大阪 16 時間 40 分
   大阪ー京都 1 時間 52 分
   京都ー富山 10 時間 39 分
 
-  ./timereq 30 50
+  $ ./timereq 30 50
   30 km/h
   東京ー大阪 16 時間 40 分
   大阪ー京都 1 時間 52 分
