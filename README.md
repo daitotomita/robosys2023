@@ -7,7 +7,10 @@ timereq:標準入力から読み込んだ値を時速換算し、東京-大阪,�
 
 ## インストール方法
 *  GitHubがインストールされている環境でpythonを導入し、以下のコマンドを入力する。
-   $git@github.com:daitotomita/robosys2023.git
+```
+$git clone @github.com:daitotomita/robosys2023.git
+```
+
 ## 必要ソフトウェア
 * Python
   * テスト済み: 3.7～3.10
