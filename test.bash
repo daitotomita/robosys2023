@@ -31,12 +31,7 @@ out=$(seq 2.0 | ./asmd)
 out=$(seq 5 10 | ./asmd)
 [ "${out}" = "45 : -45 : 151200 : 6.6138e-06" ] || ng ${LINENO}
 
-###0割のテスト###
-###numsfaileに0が入っていない場合###
-out=$(./asmd < nums)
-[ "${out}" = "11 : -11 : 30 : 0.0333333333" ] || ng ${LINENO}
-
-###numsfaileに0が入っている場合###
+###0割のテスト(numsfileに0が入っている場合)###
 out=$(./asmd < nums)
 [ "${out}" = "11 : -11 : 0 : error" ] || ng ${LINENO}
 
