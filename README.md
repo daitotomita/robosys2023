@@ -36,7 +36,7 @@ $git clone @github.com:daitotomita/robosys2023.git
   $ seq 5 | ./asmd
   15 : -15 : 120 : 0.0083333333
 
-  $ seq 5 10 |./asmd
+  $ seq 5 10 | ./asmd
   45 : -45 : 151200 : 6.6138e-06 
 
 <timereq>
