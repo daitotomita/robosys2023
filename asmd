@@ -5,22 +5,32 @@
 import sys
 import math
 
-ans1 = 0
-ans2 = 0
-ans3 = 1
-ans4 = 1
+ans1 =0
+ans2 =0
+ans3 =1
+ans4 =1
+j = 0
 
 for line in sys.stdin:
     try:
         ans1 += int(line)
         ans2 -= int(line)
         ans3 *= int(line)
-        ans4 /= int(line)
+        if int(line) != 0:
+            ans4 /= int(line)
+        else:
+            j = 1
 
     except:
         ans1 += float(line)
         ans2 -= float(line)
         ans3 *= float(line)
-        ans4 /= float(line)
+        if float(line) != 0:
+            ans4 /= int(line)
+        else:
+            j = 1
 
-print(ans1,":",ans2,":",ans3,":",round(ans4,10))
+if j == 0:
+    print(ans1,":",ans2,":",ans3,":",round(ans4,10))
+elif j == 1:
+    print(ans1,":",ans2,":",ans3,":","error")
