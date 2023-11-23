@@ -1,4 +1,4 @@
-# robosys2023 plus&timereqコマンド
+# robosys2023 asmd&timereqコマンド
 [![test](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/daitotomita/robosys2023/actions/workflows/test.yml)
 
 asmd:標準入力から読み込んだ数字に対し、足し算・引き算・掛け算・割り算をする。
