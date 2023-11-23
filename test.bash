@@ -10,66 +10,66 @@ ng () {
 res=0
 
 ### I/O TEST ###
-out=$(seq 5 | ./plus)
+out=$(seq 5 | ./asmd)
 [ "${out}" = "15 : -15 : 120 : 0.0083333333" ] || ng ${LINENO}
 
-out=$(seq 10 | ./plus)
+out=$(seq 10 | ./asmd)
 [ "${out}" = "55 : -55 : 3628800 : 2.756e-07" ] || ng ${LINENO}
 
-out=$(seq 1.0 | ./plus)
+out=$(seq 1.0 | ./asmd)
 [ "${out}" = "1 : -1 : 1 : 1.0" ] || ng ${LINENO}
 
-out=$(seq 1.1 | ./plus)
+out=$(seq 1.1 | ./asmd)
 [ "${out}" = "1 : -1 : 1 : 1.0" ] || ng ${LINENO}
 
-out=$(seq 1.9 | ./plus)
+out=$(seq 1.9 | ./asmd)
 [ "${out}" = "1 : -1 : 1 : 1.0" ] || ng ${LINENO}
 
-out=$(seq 2.0 | ./plus)
+out=$(seq 2.0 | ./asmd)
 [ "${out}" = "3 : -3 : 2 : 0.5" ] || ng ${LINENO}
 
-out=$(seq 5 10 | ./plus)
+out=$(seq 5 10 | ./asmd)
 [ "${out}" = "45 : -45 : 151200 : 6.6138e-06" ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
-out=$(echo a 10 | ./plus)
+out=$(echo a 10 | ./asmd)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo A 10 | ./plus)
+out=$(echo A 10 | ./asmd)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo あ 10 | ./plus)
+out=$(echo あ 10 | ./asmd)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo あ | ./plus)
-
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
-
-out=$(echo | ./plus)
+out=$(echo あ | ./asmd)
 
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo ! | ./plus)
+out=$(echo | ./asmd)
 
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo $ | ./plus)
+out=$(echo ! | ./asmd)
 
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo % | ./plus)
+out=$(echo $ | ./asmd)
 
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo ? | ./plus)
+out=$(echo % | ./asmd)
+
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
+out=$(echo ? | ./asmd)
 
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
