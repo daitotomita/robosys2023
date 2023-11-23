@@ -12,19 +12,19 @@ $ git clone git@github.com:daitotomita/robosys2023.git
 ```
 
 ## 必要ソフトウェア
-*asmd
+asmd
   * Python
     * テスト済み: 3.7～3.10
 
-*timereq
+timereq
   * Python
     * テスト済み: 3.7～3.10
 
 ## テスト環境
-*asmd
+asmd
   * Ubuntu 20.04
 
-*timereq
+timereq
   * Ubuntu 20.04
 
 ## 使い方
@@ -32,14 +32,14 @@ $ git clone git@github.com:daitotomita/robosys2023.git
 *  以下に実行例を示す。
 
 ```
-<asmd>
+asmd
   $ seq 5 | ./asmd
   15 : -15 : 120 : 0.0083333333
 
   $ seq 5 10 | ./asmd
   45 : -45 : 151200 : 6.6138e-06 
 
-<timereq>
+timereq
   $ ./timereq 30
   30 km/h
   東京ー大阪 16 時間 40 分
@@ -58,12 +58,12 @@ $ git clone git@github.com:daitotomita/robosys2023.git
 ```
 
 ## 著作権とライセンス
-*asmdコマンド
+asmdコマンド
   *  このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
   *  このパッケージのコードは、下記スライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著作としたものです。
       * [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 
-*timereqコマンド
+timereqコマンド
   *  このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
   
   *  © 2023 Daito Tomita
