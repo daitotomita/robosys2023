@@ -10,8 +10,22 @@ timereq:標準入力から読み込んだ値を時速換算し、東京-大阪,�
 ```
 $ git clone git@github.com:daitotomita/robosys2023.git
 ```
+*  以下のディレクトリに移動する。
+```
+$ cd robosys2023
+```
+*  asmdの場合以下のコマンドを入力する。
+```
+$ vi asmd  #ファイルの中身を確認
+$ ./asmd   #実行
+```
+*  timereqの場合以下のコマンドを入力する。
+```
+$ vi timereq  #ファイルの中身を確認
+$ ./timereq   #実行
+```
 
-## 必要ソフトウェア
+## 必要なソフトウェア
 asmd
   * Python
     * テスト済み: 3.7～3.10
@@ -66,6 +80,6 @@ asmdコマンド
 timereqコマンド
   *  このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
   
-  *  © 2023 Daito Tomita
+© 2023 Daito Tomita
 
 
